@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Improved Bulb On/Off</title>
+  <style>
+    body {
+      background-color:white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    img {
+      width: 120px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>💡 Bulb On/Off with Button</h2>
+
+  <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Bulb Image">
+
+  <div class="button-container">
+    <button onclick="bulbOn()">Turn ON</button>
+    <button onclick="bulbOff()">Turn OFF</button>
+    
+  </div>
+
+  <script>
+    function bulbOn() {
+      document.getElementById('bulb').src = "https://www.w3schools.com/js/pic_bulbon.gif";
+    }
+
+    function bulbOff() {
+      document.getElementById('bulb').src = "https://www.w3schools.com/js/pic_bulboff.gif";
+    }
+     function bulbfod() {
+      document.getElementById('bulb').src = "https://www.w3schools.com/js/pic_bulboff.gif";
+    }
+  </script>
+
+</body>
+</html>
